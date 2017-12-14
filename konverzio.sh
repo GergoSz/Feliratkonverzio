@@ -5,9 +5,13 @@ do
 	echo file: $i
 done
 
-for f in *.sub; do 
-mv -- "$f" "${f%.sub}.srt"
-done
+kiterjKonv(){
+
+	for f in *.sub; do 
+	mv -- "$f" "${f%.sub}.srt"
+	done
+
+}
 
 set -o errexit -o noclobber -o nounset -o pipefail
 
